@@ -110,7 +110,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+`[We are designing this project as if we are a small creative studio making an interactive experience for people of all age groups to enjoy.]`
 
 ---
 
@@ -121,8 +121,8 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `[Netflix series- Wednesday]` | `[Thing]` | `[We were initally going to make a walking foot, but the series' Thing inspired us to switch to making a walking hand.]` |
+| `[Biomechanics]` | `[Human Hand Anatomy & Tendon-Drive Mechanisms]` | `[We understood how fingers flex, curl, and bear weight through pivot joints, which helped shape our 3D-printed skeletal structure and motor placement]` |
 | `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
 
 ## 3.2 Original Twist
