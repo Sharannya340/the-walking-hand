@@ -123,7 +123,7 @@ List what inspired the project.
 |---|---|---|
 | `[Netflix series- Wednesday]` | `[Thing]` | `[We were initally going to make a walking foot, but the series' Thing inspired us to switch to making a walking hand.]` |
 | `[Biomechanics]` | `[Human Hand Anatomy & Tendon-Drive Mechanisms]` | `[We understood how fingers flex, curl, and bear weight through pivot joints, which helped shape our 3D-printed skeletal structure and motor placement]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `[Prosthetic Limb Research` | `[Luke Arm]` | `[Study on anatomical framework for how motors map to realistic finger movement]` |
 
 ## 3.2 Original Twist
 What makes your project original?
@@ -145,37 +145,35 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+`[press → activate → walk & wiggle → release → reset
+The participant presses the switch, which pulls GPIO 14 LOW and triggers the main loop. Instantly and simultaneously, the DC motors drive the index and little fingers forward in a walking motion, while the servo motors step through a sequence of angles — 30°, 90°, 150°, 90° — cycling every 0.3 seconds to produce a continuous, rhythmic wiggle in the middle and ring fingers. The hand walks for as long as the switch is held. The moment it is released, all four motors stop, both servos return to their neutral 90° position, and the wiggle counter resets to zero, leaving the hand exactly as it was found, ready for the next press.]`
 
 ## 4.2 Intended Player / Audience
 
 | Question | Response |
 |---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| Who is this for? | `[People of all age groups]` |
+| Age range | `[Approximately 10-70]` |
+| Solo or multiplayer | `[Solo]` |
+| Expected duration of one round | `[5 minutes]` |
+| What should the player feel? | `[surprise, excitement, curiosity]` |
+| Is explanation required before use? | `[This is a switch-operated hand. There is one control and one instruction: press the button, and the hand walks. Release it, and it stops. No setup is required, no prior knowledge is needed, and nothing about it is complicated. Press it, watch it, and try not to look away.]` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+1. **Approach:** `[The player sees a gloved hand resting still on a flat surface, connected to a small circuit board, with a switch in front of it.]`
+2. **Start:** `[They read the one-line instruction- press the button, and do exactly that.]`
+3. **First Action:** `[They press and hold the button.]`
+4. **Main Interaction:** `[They hold the button down and watch the hand respond, keeping it pressed for as long as they want to see it move.]`
+5. **System Response:** `[The moment the button is pressed, all four motors activate simultaneously. The index and little fingers begin walking the hand forward across the surface, while the middle and ring fingers wiggle in a rhythmic, repeating sequence.]`
+6. **Win / Lose / End Condition:** `[ There is no win or lose condition. The interaction ends when the player releases the button- the motors stop, the fingers return to their resting position, and the hand goes still.]`
+7. **Reset:** `[The hand is ready for the next press without any manual intervention.]`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[Rule 4]`
+- `[Not Applicable, since this is not a game.]`
 
 ---
 
