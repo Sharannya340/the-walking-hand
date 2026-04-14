@@ -75,7 +75,8 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+`[The Walking Hand is a Wednesday-series inspired project, built to human scale- a 3D-printed skeletal hand that walks on its own, with no body attached and no explanation offered. At the press of a switch, its fingers come alive: some wiggle, some walk, and the whole thing moves with just enough personality to make you deeply uncomfortable in the best possible way.
+What powers it is best left mostly to the imagination- but underneath the glove, there is circuitry, there are motors, and there is a microcontroller quietly doing its job. The result is something that sits right at the intersection of engineering and eeriness, equal parts curious artefact and crowd-stopper.]`
 
 ---
 
@@ -101,7 +102,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+`[The Walking Hand is a fun, interactive experience, that first makes the audience surprised, then fascinated, and lastly, curious. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
 
 ## 2.3 Design Persona
 Complete the sentence below:
