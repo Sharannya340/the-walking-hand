@@ -182,24 +182,24 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
+- [ ] `[The system activates upon switch input and responds without perceptible delay]`
+- [ ] `[All four fingers execute their intended motions]`
+- [ ] `[The hand demonstrates stable, controlled forward movement without collapsing or losing balance]`
+- [ ] `[The hand resets to its neutral state immediately upon release of the switch]`
+- [ ] `[At least 3 out of 5 test users express clear engagement (surprise, curiosity, or fascination) during interaction]`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`[The minimum viable version consists of a structurally stable hand capable of executing a single, clear motion in response to input. This includes one working finger driven by a motor or servo and a functional switch input. While full walking motion and multi-finger coordination may be absent, the core experience, pressing a button and witnessing an inanimate hand come to life, must remain intact. The emphasis at this stage is not complexity, but credibility of responsiveness.]`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- `[Variable speed control allowing users to modulate the pace of movement.]`
+- `[Improved gait mechanics enabling smoother, more lifelike walking across different surfaces.]`
+- `[The appearance of a real, life-like hand instead of a model.]`
 
 ---
 
@@ -208,18 +208,18 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ ] Electronics-based
-- [ ] Mechanical
+- [✅] Electronics-based
+- [✅] Mechanical
 - [ ] Sensor-based
 - [ ] App-connected
-- [ ] Motorized
+- [✅] Motorized
 - [ ] Sound-based
 - [ ] Light-based
 - [ ] Screen/UI-based
-- [ ] Fabricated structure
+- [✅] Fabricated structure
 - [ ] Game logic based
 - [ ] Installation / tabletop experience
-- [ ] Other: `[Write here]`
+- [✅] Other: `[Prank/experience/reaction based]`
 
 ## 6.2 High-Level System Description
 Explain how the system works in simple terms.
@@ -232,16 +232,16 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`[Write here]`
+`[The system operates as a closed-loop interactive mechanism translating a simple human input into coordinated mechanical motion. The primary input is a physical switch, which, when pressed, sends a signal to the ESP32 microcontroller. The controller processes this input and executes a predefined control logic that simultaneously drives DC motors and servo motors. The DC motors generate forward locomotion by actuating specific fingers, while the servo motors articulate the remaining fingers through controlled angular movement. All components are embedded within a fabricated skeletal hand structure, which houses the wiring, motors, and joints. There is no app-based interaction; the system is intentionally self-contained to preserve immediacy and tactile engagement. The output is purely physical: motion, rhythm, and presence.]`
 
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `[Switch]` | Input | `[Captures user intent; when pressed, sends a LOW signal to initiate the motion sequence.]` |
+| `[ESP32]` | Processing | `[Interprets input signal and executes programmed logic to coordinate motor and servo activity.]` |
+| `[Servos + DC Motors]` | Output | `[DC motors drive forward locomotion; servo motors control wiggling motion in the fingers.]` |
+| `[3D-Printed Hand Skeleton]` | Physical Action | `[Translates motor output into visible, tactile movement through its structure.]` |
 
 ---
 
