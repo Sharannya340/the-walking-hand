@@ -1,4 +1,4 @@
-# Open Design and Technology  
+<img width="2792" height="2549" alt="circuit_image" src="https://github.com/user-attachments/assets/bcab1a07-f72a-494e-a9d0-bc9f3996e0bf" /># Open Design and Technology  
 ## Final Project README
 
 > **Project Weight:** 70%  
@@ -275,7 +275,7 @@ Add a sketch with labels showing:
 |---|---|
 | Length | `[Write here]` |
 | Width | `[Write here]` |
-| Height | `[Write here]` |
+| Height | `[155 mm]` |
 | Estimated weight | `[Write here]` |
 
 ---
@@ -288,8 +288,8 @@ Check all that apply.
 - [ ] Gears
 - [ ] Pulleys
 - [ ] Belt drives
-- [ ] Linkages
-- [ ] Hinges
+- [✅] Linkages
+- [✅] Hinges
 - [ ] Shafts
 - [ ] Springs
 - [ ] Bearings
@@ -302,7 +302,7 @@ Check all that apply.
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`[The mechanical system is designed to replicate simplified hand biomechanics through a combination of rigid structures and articulated joints. Each finger is constructed as a segmented linkage system, connected via hinge-like joints that allow controlled bending. Motion is driven through motor-actuated pull mechanisms, where rotational motion is translated into linear tension, simulating tendon-like behavior. Select fingers are optimized for load-bearing and propulsion, enabling the hand to shift its weight and move forward, while others are tuned for expressive articulation. The mechanism prioritizes clarity of motion over anatomical precision, ensuring that each movement is both mechanically feasible and visually legible.]`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -313,21 +313,21 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`[The index and little fingers are responsible for forward locomotion that propels the hand across a flat surface. This movement is driven by DC motors, converting rotational energy into incremental shifts in position. The middle and ring fingers are actuated by servo motors, cycling through predefined angular positions to produce a continuous wiggling effect. Each motion cycle spans approximately 0.3 seconds, creating a rhythmic and synchronized output. The range of motion is deliberately constrained to maintain structural stability and prevent overextension. Potential failure points include imbalance leading to tipping, insufficient friction causing slippage, misalignment of joints affecting smooth motion, and motor torque limitations under load.]`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `[What did you validate?]` |
+| `[Blender]` | `[Link or screenshot]` | `[Scale, shape, hinges and joints]` |
 | `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`[After test printing our initial model, we realised it was too small. So we scaled it up and made it the size of a human hand.]`
 
 ---
 
@@ -338,14 +338,16 @@ What changed after the CAD, animation, or simulation stage?
 | Component | Quantity | Purpose |
 |---|---:|---|
 | `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `[Servo Motor]` | `[2]` | `[Wiggling in two fingers]` |
+| `[DC Motor]` | `[2]` | `[Forward motion in the hand]` |
+| `[Switch]` | `[1]` | `[Starting the motion in the hand]` |
+| `[Power Supply]` | `[1]` | `[Supplying power to the circuit]` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
 
 **Response:**  
-`[Write here]`
+`[The ESP32 is the main controller. The switch is connected to the ESP32 to start the whole motion. All 4 motors draw their power from the external power supply, not the ESP32.]`
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
@@ -358,9 +360,9 @@ Insert a hand-drawn or software-made circuit diagram.
 | Question | Response |
 |---|---|
 | Power source | `[USB / battery / adapter / other]` |
-| Voltage required | `[Write here]` |
-| Current concerns | `[Write here]` |
-| Safety concerns | `[Write here]` |
+| Voltage required | `[5V for servos and logic, with regulated supply as needed]` |
+| Current concerns | `[Motor startup current and simultaneous load may cause voltage drops; requires stable supply or driver support]` |
+| Safety concerns | `[Avoid overheating, ensure proper insulation of connections, and prevent short circuits during operation]` |
 
 ---
 
@@ -370,8 +372,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform | Purpose |
 |---|---|
-| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
-| `[Tool]` | `[Purpose]` |
+| `[MicroPython]` | `[Serves as the core programming environment that translates user input into coordinated motor and servo actions.]` |
+| `[Thonny]` | `[It is used as the primary tool to develop, test, and deploy the control logic onto the ESP32 efficiently.]` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
@@ -386,7 +388,7 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`[On starting, the system sets servo motors to their neutral position, and ensures DC motors are in an off state. The program then enters a continuous loop, monitoring the switch input. When the switch is pressed, the controller executes a synchronized routine: DC motors are activated to initiate forward motion, while servo motors cycle through predefined angular values to generate a rhythmic wiggle. This loop continues for as long as the input remains active. Upon release, the system immediately halts all motor activity, returns servos to neutral, and resets internal counters. The logic is intentionally minimal, prioritizing responsiveness and repeatability over complexity.]`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -402,7 +404,8 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`[<img width="1024" height="1536" alt="ChatGPT Image Apr 16, 2026, 02_23_01 PM" src="https://github.com/user-attachments/assets/235264d7-ede5-4b55-ab45-c286012e1e12" />
+]`
 
 ## 10.4 Pseudocode
 
