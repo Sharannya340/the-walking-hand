@@ -1,4 +1,3 @@
-<img width="2792" height="2549" alt="circuit_image" src="https://github.com/user-attachments/assets/bcab1a07-f72a-494e-a9d0-bc9f3996e0bf" /># Open Design and Technology  
 ## Final Project README
 
 > **Project Weight:** 70%  
@@ -404,13 +403,42 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[<img width="1024" height="1536" alt="ChatGPT Image Apr 16, 2026, 02_23_01 PM" src="https://github.com/user-attachments/assets/235264d7-ede5-4b55-ab45-c286012e1e12" />
-]`
+`[Image uploaded]`
 
 ## 10.4 Pseudocode
 
 ```text
-[Write your pseudocode here]
+[# include the servo library
+# include the time library
+# include the pin library
+# ── SWITCH ─────────────────────────────────────────────────
+# initialise the switch pin as an input with pull-down
+# ── SERVO SETUP ────────────────────────────────────────────
+# initialise the pins to be outputs - Servo is an output device
+# middle finger
+# ring finger
+# initialise the servos for use
+# ── DC MOTOR SETUP ─────────────────────────────────────────
+# initialise the DC motor pins as outputs
+# index finger - forward
+# index finger - keep LOW
+# little finger - forward
+# little finger - keep LOW
+# ── WIGGLE ANGLES ──────────────────────────────────────────
+# the servo will step between these angles to wiggle the finger
+# ── MOTOR CONTROL FUNCTIONS ────────────────────────────────
+# turn both DC motors on (index and little finger move forward)
+# turn both DC motors off
+# stop both servos (write to neutral and release)
+# ── MAIN LOOP ──────────────────────────────────────────────
+# switch is PRESSED
+        # DC motors run continuously while switch is held
+        # servos wiggle through the angle list one step at a time
+        # move to next angle in the wiggle sequence
+        # small delay between each wiggle step
+# switch is NOT pressed
+# reset wiggle for next press
+# small idle delay]
 ```
 
 ---
@@ -419,7 +447,7 @@ Suggested sequence:
 
 ## 11.1 Is an app part of this project?
 - [ ] Yes
-- [ ] No
+- [✅] No
 
 If yes, complete this section.
 
