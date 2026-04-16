@@ -508,14 +508,18 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Write here]`
+`[Materials and components were selected to balance precision, feasibility, and structural reliability. 3D printing was chosen for the hand structure due to its ability to produce complex geometries and jointed forms with high accuracy, which would be difficult to achieve using manual fabrication methods. Servo motors were used for finger articulation because of their precise angle control, while DC motors were selected for locomotion due to their continuous rotational capability and higher torque output. Lightweight materials were prioritized to reduce load on the motors, improving efficiency and stability. Overall, each choice reflects a trade-off between performance, accessibility, and ease of iteration within the given timeframe.]`
 
 ## 12.3 Items to Purchase Separately
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[ESP32]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[2 DC MOTORS]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[2 SERVO MOTORS]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[POWER SUPPLY]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[TISSUE PAPER]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+
 
 ## 12.4 Budget Summary
 
@@ -549,32 +553,32 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+`[Technical decisions are made through discussions, prioritizing feasibility within the time constraints. Progress is reviewed at regular intervals. Documentation is a continuous process, done to capture iterations, stages of the project, challenges and how we overcome them.]`
 
 ## 13.2 Task Breakdown
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
+| T1 | `[Finalize concept]` | `[Aayushi and Sharannya]` | `2` | `[Date]` | `None` | `Done` |
 | T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
+| T3 | `[Test electronics]` | `[Aayushi and Sharannya]` | `2` | `[Date]` | `T1` | `Done` |
+| T4 | `[Build structure]` | `[Sharannya]` | `4` | `[Date]` | `T1` | `Ongoing` |
+| T5 | `[Write control code]` | `[Aayushi]` | `4` | `[Date]` | `T3` | `Done` |
 | T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T7 | `[Playtest]` | `[Sharannya]` | `2` | `[Date]` | `T6` | `Ongoing` |
+| T8 | `[Refine and document]` | `[Aayushi]` | `3` | `[Date]` | `T7` | `Ongoing` |
 
 ## 13.3 Responsibility Split
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Concept and gameplay | `[Sharannya]` | `[Aayushi]` |
+| Electronics | `[Aayushi]` | `[Sharannya]` |
+| Coding | `[Aayushi]` | `[Sharannya]` |
+| App | `[NA]` | `[NA]` |
+| Mechanical build | `[Sharannya]` | `[Aayushi]` |
+| Testing | `[Sharannya]` | `[Aayushi]` |
+| Documentation | `[Aayushi]` | `[Sharannya]` |
 
 ---
 
@@ -584,46 +588,46 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [ ] Idea finalized
+- [✅] Idea finalized
 - [ ] Core interaction decided
-- [ ] Sketches made
+- [✅] Sketches made
 - [ ] BOM completed
-- [ ] Purchase needs identified
-- [ ] Key uncertainty identified
+- [✅] Purchase needs identified
+- [✅] Key uncertainty identified
 - [ ] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
 - [ ] Electronics tests completed
-- [ ] CAD / structure planning completed
+- [✅] CAD / structure planning completed
 - [ ] App UI started if needed
-- [ ] Mechanical concept tested
-- [ ] Main subsystems partially working
+- [✅] Mechanical concept tested
+- [✅] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [ ] Physical body built
-- [ ] Electronics integrated
-- [ ] Code connected to hardware
+- [✅] Physical body built
+- [✅] Electronics integrated
+- [✅] Code connected to hardware
 - [ ] App connected if required
 - [ ] First playable version exists
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [ ] Technical bugs reduced
+- [✅] Technical bugs reduced
 - [ ] Playtesting completed
-- [ ] Improvements made
-- [ ] Documentation completed
-- [ ] Final build ready
+- [✅] Improvements made
+- [✅] Documentation completed
+- [✅] Final build ready
 
 ## 14.2 Weekly Update Log
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `[Concept finalisation and execution planning]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 2 | `[Source all the materials]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 3 | `[Building]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 4 | `[Refine and Finish]` | `[Write here]` | `[Write here]` | `[Write here]` |
 
 ---
 
