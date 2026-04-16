@@ -639,14 +639,14 @@ Expected outcomes:
 |---|---|---|---|---|---|
 | `[Example: Bluetooth disconnects]` | `Technical` | `Medium` | `High` | `[Fallback interaction / simplify connection flow]` | `[Name]` |
 | `[Example: Structure breaks during play]` | `Mechanical` | `Medium` | `High` | `[Reinforce joints / change material]` | `[Name]` |
-| `[Risk]` | `[Technical / Material / Time / Gameplay]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
-| `[Risk]` | `[Type]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
+| `[Motor torque insufficient for forward movement]` | `[Technical]` | `[Medium]` | `[High]` | `[Test under load early; reduce weight]` | `[Aayushi]` |
+| `[Unstable gait causing tipping]` | `[Mechanical]` | `[Medium]` | `[High]` | `[Adjust center of gravity, redistribute weight]` | `[Sharannya]` |
 
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`[The primary uncertainty lies in achieving stable locomotion again and again. While individual components—motors, servos, and joints—function as intended in isolation, their synchronized behavior after the outer visual elements are attached onto the skeleton remains an unresolved variable.]`
 
 ---
 
