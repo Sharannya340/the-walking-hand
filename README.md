@@ -514,11 +514,11 @@ Examples:
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[ESP32]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[2 DC MOTORS]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[2 SERVO MOTORS]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[POWER SUPPLY]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[TISSUE PAPER]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[ESP32]` | `[Our original ESP32 got fried]` | `[Link]` | `[Date]` | `[Received]` |
+| `[2 DC MOTORS]` | `[Our original DC motors were uresponsive]` | `[Link]` | `[Date]` | `[Received]` |
+| `[2 SERVO MOTORS]` | `[Our original servo motors were uresponsive]` | `[Link]` | `[Date]` | `[Received]` |
+| `[POWER SUPPLY]` | `[Backup incase of overload]` | `[Link]` | `[Date]` | `[Received]` |
+| `[TISSUE PAPER]` | `[Paper mache outer covering]` | `[Link]` | `[15th april]` | `[Received]` |
 
 
 ## 12.4 Budget Summary
@@ -624,10 +624,10 @@ Expected outcomes:
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Concept finalisation and execution planning]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Source all the materials]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Building]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Refine and Finish]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `[Concept finalisation and execution planning]` | `[Finalising our idea, getting to approved, and brainstorming its execution]` | `[We had initially planeed a walking foot or walking shoe, but upon more discussion, we committed to a walking hand]` | `[We had multiple meetings and researched on how to execute it]` |
+| Week 2 | `[Source all the materials]` | `[Getting everything ready for building]` | `[Nothing]` | `[3d Printing and making the connections]` |
+| Week 3 | `[Building]` | `[3d Printing, attaching the electronics, making the connections, adjusting the code]` | `[Our idea for the outer covering]` | `[Paper mache and prank planning]` |
+| Week 4 | `[Refine and Finish]` | `[Working on its presentation for the final day]` | `[Ideas for final day prank]` | `[Prep for the exhibition]` |
 
 ---
 
@@ -656,33 +656,33 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
-| `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
-| `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
-| `[App communication]` | `[Method]` | `[What counts as success?]` |
+| `[Switch input reliability]` | `[Repeated manual press cycles under varying speeds and for varying time periods]` | `[Consistent and immediate response without false triggers]` |
+| `[Mechanism movement]` | `[Running motion cycles for varying durations]` | `[Smooth, uninterrupted movement without mechanical failure]` |
+| `[Servo motors]` | `[Observe synchronized angle transitions across cycles]` | `[Accurate, repeatable wiggling without jitters]` |
+| `[DC motors]` | `[Test on different surfaces]` | `[Sustained forward movement without stalling]` |
 
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
 |---|---|
-| Do players understand what to do? | `[Method]` |
-| Is the interaction satisfying? | `[Method]` |
-| Do players want another turn? | `[Method]` |
-| Is the challenge balanced? | `[Method]` |
-| Is the response clear and immediate? | `[Method]` |
+| Do players understand what to do? | `[Observe if users press the switch without hesitation upon instruction]` |
+| Is the interaction satisfying? | `[Record immediate reactions (facial expressions)]` |
+| Do players want another turn? | `[Track repeat interactions and voluntary re-engagement]` |
+| Is the challenge balanced? | `[Not applicable]` |
+| Is the response clear and immediate? | `[Measure delay between input and motion; observe user perception]` |
 
 ## 16.3 Testing and Debugging Log
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
-| `[Date]` | `[Describe issue]` | `[Technical / Mechanical / UI / Gameplay]` | `[What you did]` | `[Worked / Partly / Failed]` | `[Next step]` |
+| `[15th April]` | `[Motion of the hand was sudden and jittery; Hand lost balance]` | `[Mechanical]` | `[Changed the position of the servos and DC motors and tested various combinations]` | `[Worked]` | `[Observing such probelms in the future]` |
 | `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
 
 ## 16.4 Playtesting Notes
 
 | Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
 |---|---|---|---|---|
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
+| `[Radhika / friend / classmate]` | `[Follwed all the steps]` | `[Nothing]` | `[The movement]` | `[Increase the surprise element]` |
 | `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
 
 ---
@@ -702,7 +702,7 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+`[The project was created through a structured sequence of digital modeling and physical assembly. The hand structure was first designed in Blender and 3D printed to achieve precision. Individual components were then cleaned, sanded, and fit. Motors and servos were mounted within the structure using mechanical fasteners and adhesives, with careful attention to alignment and load distribution. Wiring was routed internally to maintain a clean external form while ensuring accessibility for debugging. Iterative revisions were made throughout assembly, particularly in joint tolerances and motor placement, to improve stability and motion quality.]`
 
 ## 17.2 Build Photos
 Add photos throughout the project.
@@ -726,9 +726,9 @@ Example:
 
 | Version | Date | What Changed | Why |
 |---|---|---|---|
-| `v1` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v2` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v3` | `[Date]` | `[Describe]` | `[Reason]` |
+| `v1` | `[13th April]` | `[Basic structure with single motor movement]` | `[Validation of core motion feasibility]` |
+| `v2` | `[14th April]` | `[Integrated all 4 motors and tested their simultaneous movement]` | `[Test interaction complexity]` |
+| `v3` | `[16th April]` | `[Refined gait and balance]` | `[Perfect the motion]` |
 
 ---
 
@@ -738,23 +738,23 @@ Example:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`[The final outcome is a cool, motorized hand prank that responds instantly to user input, translating a simple press into coordinated, lifelike motion. The system successfully integrates mechanical design, electronics, and control into a cohesive interactive artefact. It achieves its intended effect—an object that is at once familiar and unsettling—by prioritizing clarity of motion, responsiveness, and physical presence over complexity.]`
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[Immediate and reliable input-to-motion response]`
+- `[Clear, synchronized coordination between motors and servos]`
+- `[Strong user engagement driven by novelty and uncanny motion]`
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[The visual, appearance]`
+- `[Element of surprise]`
+- `[More refined balance and weight distribution]`
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`[The project evolved from a simpler concept of finger movement to a cooler vision of a walking hand prank, incorporating a fun aesthetic and element of surprise. This shift required greater emphasis on mechanical stability, synchronization, aesthetics and load management. As a result, the design became less about individual motion fidelity and more about achieving a cohesive, believable system of movement.]`
 
 ---
 
@@ -766,7 +766,7 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
-`[Write here]`
+`[Our team demonstrated strong alignment in vision, execution and consistent communication throughout the process. Progress was most effective when tasks were discussed, brainstormed and parallelized, particularly during early development stages. Delays primarily arose during integration, where interdependencies between mechanical and electronic systems required iterative troubleshooting. Overall, time and responsibilities were managed effectively, with adaptability playing a key role in maintaining momentum.]`
 
 ## 19.2 Technical Reflection
 What did you learn about:
@@ -777,7 +777,7 @@ What did you learn about:
 - integration?
 
 **Response:**  
-`[Write here]`
+`[This project deepened our understanding of how systems, electronics, code, and mechanics, interact under real-world constraints. We learned that reliable hardware behavior depends as much on power stability and physical alignment as it does on correct code. The integration phase revealed the importance of iterative testing, where small misalignments or inefficiencies compound into larger system-level issues. Most critically, we learned to design with constraints in mind rather than attempting to resolve them later.]`
 
 ## 19.3 Design Reflection
 What did you learn about:
@@ -789,13 +789,13 @@ What did you learn about:
 - iteration?
 
 **Response:**  
-`[Write here]`
+`[We learned that designing for play does not require complexity, but clarity and immediacy. The most effective interactions are those that communicate their function intuitively and respond without delay. The project reinforced the value of restraint- by limiting inputs and removing unnecessary layers, the experience became more focused and impactful. Iteration proved essential in refining, not just functionality, but the emotional response elicited by the object.]`
 
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`[Improvising the user experience, and creating an even cooler prank stages and atmosphere.]`
 
 ---
 
