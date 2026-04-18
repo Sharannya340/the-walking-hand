@@ -57,8 +57,8 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `[Sharannya Sakorkar]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Circuitry]` |
-| `[Aayushi Shirodkar]` | `[Electronics / Coding / App / Fabrication / Mechanics]` | `[Role]` | `[Coding]` |
+| `[Sharannya Sakorkar]` | `[Mechanics]` | `[Fabrication + Electronics]` | `[Mechanics]` |
+| `[Aayushi Shirodkar]` | `[Coding]` | `[Fabrication + Electronics]` | `[Coding]` |
 
 ## 1.3 Project Title
 `[The Walking Hand]`
@@ -128,7 +128,7 @@ List what inspired the project.
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`[It is a fun, harmless prank menat to spread laughter and excitement.]`
 
 ---
 
