@@ -64,7 +64,7 @@ By the final review, this README should clearly show:
 `[The Walking Hand]`
 
 ## 1.4 One-Line Pitch
-`[Netflix's Wednesday-inspired, switch-operated, creepy walking hand]`
+`[Netflix's Wednesday-inspired, switch-operated, creepy walking hand, that pranks users.]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -74,7 +74,7 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[The Walking Hand is a Wednesday-series inspired project, built to human scale- a 3D-printed skeletal hand that walks on its own, with no body attached and no explanation offered. At the press of a switch, its fingers come alive: some wiggle, some walk, and the whole thing moves with just enough personality to make you deeply uncomfortable in the best possible way.
+`[The Walking Hand is a Wednesday-series inspired project, built to human scale- a 3D-printed skeletal hand that walks on its own, with no body attached and no explanation offered. At the press of a switch, its fingers come alive: some wiggle, some walk, and the whole thing moves with just enough personality to prank you in the best possible way.
 What powers it is best left mostly to the imagination- but underneath the glove, there is circuitry, there are motors, and there is a microcontroller quietly doing its job. The result is something that sits right at the intersection of engineering and eeriness, equal parts curious artefact and crowd-stopper.]`
 
 ---
@@ -101,7 +101,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[The Walking Hand is a fun, interactive experience, that first pranks the audience, then fscinates them, and lastly, sparks curiosity in them. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
+`[The Walking Hand is a fun, interactive experience, that first pranks the audience, then fascinates them, and lastly, sparks curiosity in them. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -515,10 +515,10 @@ Examples:
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[ESP32]` | `[Our original ESP32 got fried]` | `[Link]` | `[Date]` | `[Received]` |
-| `[2 DC MOTORS]` | `[Our original DC motors were uresponsive]` | `[Link]` | `[Date]` | `[Received]` |
-| `[2 SERVO MOTORS]` | `[Our original servo motors were uresponsive]` | `[Link]` | `[Date]` | `[Received]` |
-| `[POWER SUPPLY]` | `[Backup incase of overload]` | `[Link]` | `[Date]` | `[Received]` |
+| `[ESP32]` | `[Our original ESP32 got fried]` | `[Link]` | `[7th April]` | `[Received]` |
+| `[2 DC MOTORS]` | `[Our original DC motors were uresponsive]` | `[Link]` | `[7th April]` | `[Received]` |
+| `[2 SERVO MOTORS]` | `[Our original servo motors were uresponsive]` | `[Link]` | `[7th April]` | `[Received]` |
+| `[POWER SUPPLY]` | `[Backup incase of overload]` | `[Link]` | `[14th April]` | `[Received]` |
 | `[TISSUE PAPER]` | `[Paper mache outer covering]` | `[Link]` | `[15th april]` | `[Received]` |
 
 
@@ -526,18 +526,18 @@ Examples:
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `[Cost]` |
+| Electronics | `[873]` |
 | Mechanical parts | `[Cost]` |
-| Fabrication materials | `[Cost]` |
+| Fabrication materials | `[332]` |
 | Purchased extras | `[Cost]` |
 | Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| **Total** | `[1205]` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
-`[Write here]`
+`[NA]`
 
 ---
 
@@ -561,13 +561,13 @@ Include:
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
 | T1 | `[Finalize concept]` | `[Aayushi and Sharannya]` | `2` | `[Date]` | `None` | `Done` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Aayushi and Sharannya]` | `2` | `[Date]` | `T1` | `Done` |
+| T2 | `[Complete BOM]` | `[Aayushi]` | `1` | `[Date]` | `T1` | `To Do` |
+| T3 | `[Test electronics]` | `[Aayushi and Sharannya]` | `3` | `[Date]` | `T1` | `Done` |
 | T4 | `[Build structure]` | `[Sharannya]` | `4` | `[Date]` | `T1` | `Ongoing` |
 | T5 | `[Write control code]` | `[Aayushi]` | `4` | `[Date]` | `T3` | `Done` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
+| T6 | `[Integrate system]` | `[Sharannya]` | `4` | `[Date]` | `T4, T5` | `To Do` |
 | T7 | `[Playtest]` | `[Sharannya]` | `2` | `[Date]` | `T6` | `Ongoing` |
-| T8 | `[Refine and document]` | `[Aayushi]` | `3` | `[Date]` | `T7` | `Ongoing` |
+| T8 | `[Refine and document]` | `[Aayushi]` | `4` | `[Date]` | `T7` | `Ongoing` |
 
 ## 13.3 Responsibility Split
 
@@ -667,7 +667,7 @@ What is the single biggest uncertainty in your project at this stage?
 | Question | How You Will Check |
 |---|---|
 | Do players understand what to do? | `[Observe if users press the switch without hesitation upon instruction]` |
-| Is the interaction satisfying? | `[Record immediate reactions (facial expressions)]` |
+| Is the interaction satisfying? | `[Record immediate reactions (facial expressions, see if they get successfully pranked or not)]` |
 | Do players want another turn? | `[Track repeat interactions and voluntary re-engagement]` |
 | Is the challenge balanced? | `[Not applicable]` |
 | Is the response clear and immediate? | `[Measure delay between input and motion; observe user perception]` |
