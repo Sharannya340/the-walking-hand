@@ -101,7 +101,7 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[The Walking Hand is a fun, interactive experience, that first makes the audience surprised, then fascinated, and lastly, curious. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
+`[The Walking Hand is a fun, interactive experience, that first pranks the audience, then fscinates them, and lastly, sparks curiosity in them. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -161,9 +161,9 @@ The participant presses the switch, which pulls GPIO 14 LOW and triggers the mai
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[The player sees a gloved hand resting still on a flat surface, connected to a small circuit board, with a switch in front of it.]`
-2. **Start:** `[They read the one-line instruction- press the button, and do exactly that.]`
-3. **First Action:** `[They press and hold the button.]`
+1. **Approach:** `[The player is interacting with a website.]`
+2. **Start:** `[They read the one-line instruction- press the switch, and do exactly that.]`
+3. **First Action:** `[Suddenly, the hand comes out of nowhere and pranks the user.]`
 4. **Main Interaction:** `[They hold the button down and watch the hand respond, keeping it pressed for as long as they want to see it move.]`
 5. **System Response:** `[The moment the button is pressed, all four motors activate simultaneously. The index and little fingers begin walking the hand forward across the surface, while the middle and ring fingers wiggle in a rhythmic, repeating sequence.]`
 6. **Win / Lose / End Condition:** `[ There is no win or lose condition. The interaction ends when the player releases the button- the motors stop, the fingers return to their resting position, and the hand goes still.]`
@@ -272,10 +272,10 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[155 mm]` |
-| Estimated weight | `[Write here]` |
+| Length | `[20 cm]` |
+| Width | `[15.2 cm]` |
+| Height | `[28.4 cm]` |
+| Estimated weight | `[approximately 50 gm]` |
 
 ---
 
@@ -320,7 +320,7 @@ If your project includes mechanical motion, document the digital planning before
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
 | `[Blender]` | `[Link or screenshot]` | `[Scale, shape, hinges and joints]` |
-| `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
+
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
@@ -494,9 +494,10 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| `[ESP32]` | `1` | `Yes` | `Yes` | `284` | `[Spec]` | `[The one in the kit stopped working]` |
+| `[Power supply (bug conerter)]` | `[1]` | `[No]` | `[Yes]` | `[50]` | `[Spec]` | `[Backup, incase the power supply stopped working because of 4 motors]` |
+| `[Car]` | `[1]` | `[No]` | `[Yes]` | `[399]` | `[Material]` | `[We needed the DC motors from the toy car]` |
+| `[Servo motor]` | `1` | `Yes` | `Yes` | `140` | `[Spec]` | `[Servos in the kit stopped working]` |
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
