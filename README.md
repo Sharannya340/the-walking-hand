@@ -394,11 +394,17 @@ Check all that apply.
 - [ ] Levers
 - [ ] Not applicable
 
+NEW-
+`[Not applicable to our new project.]`
+
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
 `[The mechanical system is designed to replicate simplified hand biomechanics through a combination of rigid structures and articulated joints. Each finger is constructed as a segmented linkage system, connected via hinge-like joints that allow controlled bending. Motion is driven through motor-actuated pull mechanisms, where rotational motion is translated into linear tension, simulating tendon-like behavior. Select fingers are optimized for load-bearing and propulsion, enabling the hand to shift its weight and move forward, while others are tuned for expressive articulation. The mechanism prioritizes clarity of motion over anatomical precision, ensuring that each movement is both mechanically feasible and visually legible.]`
+
+NEW-
+`[The project does not involve moving mechanical parts. The hand model is static and used as an input interface.]`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -411,6 +417,9 @@ If something moves, explain:
 **Response:**  
 `[The index and little fingers are responsible for forward locomotion that propels the hand across a flat surface. This movement is driven by DC motors, converting rotational energy into incremental shifts in position. The middle and ring fingers are actuated by servo motors, cycling through predefined angular positions to produce a continuous wiggling effect. Each motion cycle spans approximately 0.3 seconds, creating a rhythmic and synchronized output. The range of motion is deliberately constrained to maintain structural stability and prevent overextension. Potential failure points include imbalance leading to tipping, insufficient friction causing slippage, misalignment of joints affecting smooth motion, and motor torque limitations under load.]`
 
+NEW-
+`[Not applicable to the new project.]`
+
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
 
@@ -418,12 +427,18 @@ If your project includes mechanical motion, document the digital planning before
 |---|---|---|
 | `[Blender]` | `[Link or screenshot]` | `[Scale, shape, hinges and joints]` |
 
+NEW-
+`[Same as before.]`
+
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
 `[After test printing our initial model, we realised it was too small. So we scaled it up and made it the size of a human hand.]`
+
+NEW-
+`[Same as before.]`
 
 ---
 
@@ -439,10 +454,18 @@ What changed after the CAD, animation, or simulation stage?
 | `[Switch]` | `[1]` | `[Starting the motion in the hand]` |
 | `[Power Supply]` | `[1]` | `[Supplying power to the circuit]` |
 
+NEW-
+| `[ESP32]` | `1` | `[Main controller]` |
+| `[Wires]` | `[Multiple]` | `[Connections]` |
+| `[Breadboard]` | `[1]` | `[Circuit setup]` |
+
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
 
 **Response:**  
+`[Each finger of the hand model is connected to the ESP32 using wires. When a finger is tapped, it sends a signal to the ESP32, which communicates it to the system on the laptop.]`
+
+NEW-
 `[The ESP32 is the main controller. The switch is connected to the ESP32 to start the whole motion. All 4 motors draw their power from the external power supply, not the ESP32.]`
 
 ## 9.3 Circuit Diagram
@@ -460,6 +483,12 @@ Insert a hand-drawn or software-made circuit diagram.
 | Current concerns | `[Motor startup current and simultaneous load may cause voltage drops; requires stable supply or driver support]` |
 | Safety concerns | `[Avoid overheating, ensure proper insulation of connections, and prevent short circuits during operation]` |
 
+NEW-
+| Power source | `[ESP32]` |
+| Voltage required | `[3.3V ]` |
+| Current concerns | `[Stable connection required]` |
+| Safety concerns | `[Avoid short circuits]` |
+
 ---
 
 # 10. Software Planning
@@ -470,6 +499,10 @@ Insert a hand-drawn or software-made circuit diagram.
 |---|---|
 | `[MicroPython]` | `[Serves as the core programming environment that translates user input into coordinated motor and servo actions.]` |
 | `[Thonny]` | `[It is used as the primary tool to develop, test, and deploy the control logic onto the ESP32 efficiently.]` |
+
+NEW-
+| `[MicroPython (Thonny)]` | `[Hardware control]` |
+| `[Pygame]` | `[Game interface]` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
@@ -485,6 +518,9 @@ Include:
 
 **Response:**  
 `[On starting, the system sets servo motors to their neutral position, and ensures DC motors are in an off state. The program then enters a continuous loop, monitoring the switch input. When the switch is pressed, the controller executes a synchronized routine: DC motors are activated to initiate forward motion, while servo motors cycle through predefined angular values to generate a rhythmic wiggle. This loop continues for as long as the input remains active. Upon release, the system immediately halts all motor activity, returns servos to neutral, and resets internal counters. The logic is intentionally minimal, prioritizing responsiveness and repeatability over complexity.]`
+
+NEW-
+`[The program starts by initializing the game and playing music. It displays prompts indicating which finger to press. The system continuously checks for input from the ESP32. Based on timing and correctness, it displays feedback and updates the score. After 40 seconds, the game ends and shows the final score.]`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -536,6 +572,9 @@ Suggested sequence:
 # switch is NOT pressed
 # reset wiggle for next press
 # small idle delay]
+
+NEW-
+
 ```
 
 ---
@@ -545,6 +584,9 @@ Suggested sequence:
 ## 11.1 Is an app part of this project?
 - [ ] Yes
 - [✅] No
+
+NEW-
+`[Same as before.]`
 
 If yes, complete this section.
 
@@ -596,6 +638,9 @@ Insert a sketch or screenshot of the app interface.
 | `[Car]` | `[1]` | `[No]` | `[Yes]` | `[399]` | `[Material]` | `[We needed the DC motors from the toy car]` |
 | `[Servo motor]` | `1` | `Yes` | `Yes` | `140` | `[Spec]` | `[Servos in the kit stopped working]` |
 
+NEW-
+
+
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
 
@@ -607,6 +652,8 @@ Examples:
 
 **Response:**  
 `[Materials and components were selected to balance precision, feasibility, and structural reliability. 3D printing was chosen for the hand structure due to its ability to produce complex geometries and jointed forms with high accuracy, which would be difficult to achieve using manual fabrication methods. Servo motors were used for finger articulation because of their precise angle control, while DC motors were selected for locomotion due to their continuous rotational capability and higher torque output. Lightweight materials were prioritized to reduce load on the motors, improving efficiency and stability. Overall, each choice reflects a trade-off between performance, accessibility, and ease of iteration within the given timeframe.]`
+
+
 
 ## 12.3 Items to Purchase Separately
 
