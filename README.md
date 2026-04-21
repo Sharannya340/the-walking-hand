@@ -374,6 +374,12 @@ Add a sketch with labels showing:
 | Height | `[28.4 cm]` |
 | Estimated weight | `[approximately 50 gm]` |
 
+NEW-
+| Length | `[20 cm]` |
+| Width | `[15.2 cm]` |
+| Height | `[13.5 cm]` |
+| Estimated weight | `[approximately 50 gm]` |
+
 ---
 
 # 8. Mechanical Planning
@@ -463,10 +469,11 @@ NEW-
 Describe the main electrical connections.
 
 **Response:**  
-`[Each finger of the hand model is connected to the ESP32 using wires. When a finger is tapped, it sends a signal to the ESP32, which communicates it to the system on the laptop.]`
+`[The ESP32 is the main controller. The switch is connected to the ESP32 to start the whole motion. All 4 motors draw their power from the external power supply, not the ESP32.]`
 
 NEW-
-`[The ESP32 is the main controller. The switch is connected to the ESP32 to start the whole motion. All 4 motors draw their power from the external power supply, not the ESP32.]`
+`[Each finger of the hand model is connected to the ESP32 using wires. When a finger is tapped, it sends a signal to the ESP32, which communicates it to the system on the laptop.]`
+
 
 ## 9.3 Circuit Diagram
 Insert a hand-drawn or software-made circuit diagram.
@@ -574,6 +581,21 @@ Suggested sequence:
 # small idle delay]
 
 NEW-
+`[#Touch pins
+# Map: key → (TouchPad, keycode, modifier)
+# Simple debounce tracking
+# Touch detected]`
+
+pygame code:
+`[# ───────── CONFIG ─────────
+# ───────── INIT ─────────
+# ───────── VISUALS ─────────
+# ───────── GAME STATE ─────────
+# ───────── MAIN LOOP ─────────
+# ───────── DRAW ─────────
+# AUTO MISS]`
+
+
 
 ```
 
@@ -633,13 +655,17 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `Yes` | `284` | `[Spec]` | `[The one in the kit stopped working]` |
-| `[Power supply (bug conerter)]` | `[1]` | `[No]` | `[Yes]` | `[50]` | `[Spec]` | `[Backup, incase the power supply stopped working because of 4 motors]` |
+| `[ESP32]` | `1` | `Yes` | `Yes` | `284` | `[Microcontroller]` | `[The one in the kit stopped working]` |
+| `[Power supply (buck converter)]` | `[1]` | `[No]` | `[Yes]` | `[50]` | `[Spec]` | `[Backup, incase the power supply stopped working because of 4 motors]` |
 | `[Car]` | `[1]` | `[No]` | `[Yes]` | `[399]` | `[Material]` | `[We needed the DC motors from the toy car]` |
 | `[Servo motor]` | `1` | `Yes` | `Yes` | `140` | `[Spec]` | `[Servos in the kit stopped working]` |
 
 NEW-
-
+| `[ESP32]` | `1` | `Yes` | `Yes` | `284` | `[Microcontroller]` | `[The one in the kit stopped working]` |
+| `[Wires]` | `Multiple` | `Yes` | `No` | `0` | `[Copper]` | `[Connections]` |
+| `[Breadboard]` | `1` | `Yes` | `No` | `0` | `[Plastic]` | `[Easy setup]` |
+| `[MDF board]` | `1` | `No` | `No` | `0` | `[Wood]` | `[Stable base]` |
+| `[3D Printed Hand]` | `1` | `No` | `No` | `0` | `[PLA]` | `[Interactive element]` |
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -653,7 +679,8 @@ Examples:
 **Response:**  
 `[Materials and components were selected to balance precision, feasibility, and structural reliability. 3D printing was chosen for the hand structure due to its ability to produce complex geometries and jointed forms with high accuracy, which would be difficult to achieve using manual fabrication methods. Servo motors were used for finger articulation because of their precise angle control, while DC motors were selected for locomotion due to their continuous rotational capability and higher torque output. Lightweight materials were prioritized to reduce load on the motors, improving efficiency and stability. Overall, each choice reflects a trade-off between performance, accessibility, and ease of iteration within the given timeframe.]`
 
-
+NEW-
+`[MDF provides a stable base. The 3D printed hand allows accurate finger placement and a fun interactive experience. ESP32 is used for easy input handling.]`
 
 ## 12.3 Items to Purchase Separately
 
@@ -664,6 +691,9 @@ Examples:
 | `[2 SERVO MOTORS]` | `[Our original servo motors were uresponsive]` | `[Link]` | `[7th April]` | `[Received]` |
 | `[POWER SUPPLY]` | `[Backup incase of overload]` | `[Link]` | `[14th April]` | `[Received]` |
 | `[TISSUE PAPER]` | `[Paper mache outer covering]` | `[Link]` | `[15th april]` | `[Received]` |
+
+NEW-
+ `[Nothing separately for the new project.]`
 
 
 ## 12.4 Budget Summary
@@ -700,18 +730,32 @@ Include:
 **Response:**  
 `[Technical decisions are made through discussions, prioritizing feasibility within the time constraints. Progress is reviewed at regular intervals. Documentation is a continuous process, done to capture iterations, stages of the project, challenges and how we overcome them.]`
 
+NEW-
+`[Even though we had to change our concept last minute due to unforseen obstacles, we managed it. We took turns making decisions, stayed and worked together despite the hopelessness and pulled through in the end.]`
+
 ## 13.2 Task Breakdown
 
 | Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Aayushi and Sharannya]` | `2` | `[Date]` | `None` | `Done` |
-| T2 | `[Complete BOM]` | `[Aayushi]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Aayushi and Sharannya]` | `3` | `[Date]` | `T1` | `Done` |
-| T4 | `[Build structure]` | `[Sharannya]` | `4` | `[Date]` | `T1` | `Ongoing` |
-| T5 | `[Write control code]` | `[Aayushi]` | `4` | `[Date]` | `T3` | `Done` |
-| T6 | `[Integrate system]` | `[Sharannya]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Sharannya]` | `2` | `[Date]` | `T6` | `Ongoing` |
-| T8 | `[Refine and document]` | `[Aayushi]` | `4` | `[Date]` | `T7` | `Ongoing` |
+| T1 | `[Finalize concept]` | `[Aayushi and Sharannya]` | `2` | `[7th april]` | `None` | `Done` |
+| T2 | `[Complete BOM]` | `[Aayushi]` | `1` | `[19th april]` | `T1` | `To Do` |
+| T3 | `[Test electronics]` | `[Aayushi and Sharannya]` | `3` | `[14th april]` | `T1` | `Done` |
+| T4 | `[Build structure]` | `[Sharannya]` | `4` | `[15th april]` | `T1` | `Ongoing` |
+| T5 | `[Write control code]` | `[Aayushi]` | `4` | `[14th april]` | `T3` | `Done` |
+| T6 | `[Integrate system]` | `[Sharannya]` | `4` | `[18th april]` | `T4, T5` | `To Do` |
+| T7 | `[Playtest]` | `[Sharannya]` | `2` | `[20th april]` | `T6` | `Ongoing` |
+| T8 | `[Refine and document]` | `[Aayushi]` | `4` | `[20th april]` | `T7` | `Ongoing` |
+
+NEW-
+| T1 | `[Finalize concept]` | `[Aayushi and Sharannya]` | `2` | `[20th april]` | `None` | `Done` |
+| T2 | `[Complete BOM]` | `[Aayushi]` | `1` | `[20th april]` | `T1` | `Done` |
+| T3 | `[Test electronics]` | `[Aayushi and Sharannya]` | `3` | `[20th april]` | `T1` | `Done` |
+| T4 | `[Build structure]` | `[Sharannya]` | `4` | `[20th april]` | `T1` | `Done` |
+| T5 | `[Write control code]` | `[Aayushi]` | `4` | `[20th april]` | `T3` | `Done` |
+| T6 | `[Integrate system]` | `[Sharannya]` | `4` | `[20th april]` | `T4, T5` | `Done` |
+| T7 | `[Playtest]` | `[Sharannya]` | `2` | `[20th april]` | `T6` | `Done` |
+| T8 | `[Refine and document]` | `[Aayushi]` | `4` | `[20th april]` | `T7` | `Done` |
+
 
 ## 13.3 Responsibility Split
 
@@ -724,6 +768,9 @@ Include:
 | Mechanical build | `[Sharannya]` | `[Aayushi]` |
 | Testing | `[Sharannya]` | `[Aayushi]` |
 | Documentation | `[Aayushi]` | `[Sharannya]` |
+
+NEW-
+`[Same as before.]`
 
 ---
 
@@ -765,6 +812,9 @@ Expected outcomes:
 - [✅] Documentation completed
 - [✅] Final build ready
 
+NEW-
+`[We had to scrap our inital idea of the prank on the night of 20th April because our H-Bridge and DC motors got fried. Hence, we came up with an entirely new concept and executed it in less than 24 hours.]`
+
 ## 14.2 Weekly Update Log
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
@@ -773,6 +823,9 @@ Expected outcomes:
 | Week 2 | `[Source all the materials]` | `[Getting everything ready for building]` | `[Nothing]` | `[3d Printing and making the connections]` |
 | Week 3 | `[Building]` | `[3d Printing, attaching the electronics, making the connections, adjusting the code]` | `[Our idea for the outer covering]` | `[Paper mache and prank planning]` |
 | Week 4 | `[Refine and Finish]` | `[Working on its presentation for the final day]` | `[Ideas for final day prank]` | `[Prep for the exhibition]` |
+
+NEW-
+`[We had to scrap our inital idea of the prank on the night of 20th April because our H-Bridge and DC motors got fried. Hence, we came up with an entirely new concept and executed it in less than 24 hours.]`
 
 ---
 
@@ -787,11 +840,18 @@ Expected outcomes:
 | `[Motor torque insufficient for forward movement]` | `[Technical]` | `[Medium]` | `[High]` | `[Test under load early; reduce weight]` | `[Aayushi]` |
 | `[Unstable gait causing tipping]` | `[Mechanical]` | `[Medium]` | `[High]` | `[Adjust center of gravity, redistribute weight]` | `[Sharannya]` |
 
+NEW-
+| `[Input not detected]` | `[Technical]` | `[Medium]` | `[High]` | `[Check Wiring]` | `[Team]` |
+| `[Damage of parts]` | `[Material]` | `[Medium]` | `[High]` | `[Careful handling; taking extra precaution and not letting the ESP32 heat up]` | `[Team]` |
+
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
 `[The primary uncertainty lies in achieving stable locomotion again and again. While individual components—motors, servos, and joints—function as intended in isolation, their synchronized behavior after the outer visual elements are attached onto the skeleton remains an unresolved variable.]`
+
+NEW-
+`[Ensuring accurate and fast communication between hardware input and game response.]`
 
 ---
 
@@ -806,6 +866,10 @@ What is the single biggest uncertainty in your project at this stage?
 | `[Servo motors]` | `[Observe synchronized angle transitions across cycles]` | `[Accurate, repeatable wiggling without jitters]` |
 | `[DC motors]` | `[Test on different surfaces]` | `[Sustained forward movement without stalling]` |
 
+NEW-
+| `[Successful input]` | `[Manual testing]` | `[Correct detection of inputs]` |
+| `[Game response]` | `[Running the program]` | `[Immediate feedback]` |
+
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
@@ -816,19 +880,31 @@ What is the single biggest uncertainty in your project at this stage?
 | Is the challenge balanced? | `[Not applicable]` |
 | Is the response clear and immediate? | `[Measure delay between input and motion; observe user perception]` |
 
+NEW-
+| Do players understand what to do? | `[Observe if users handle the hand shaped mouse confidently after instrustion.]` |
+| Is the interaction satisfying? | `[Record their game (facial expressions, see if they are getting challenged, having fun, getting stressed out)]` |
+| Do players want another turn? | `[Track repeat interactions and voluntary re-engagement]` |
+| Is the challenge balanced? | `[User feedback]` |
+| Is the response clear and immediate? | `[Measure delay between input and response; observe user perception]` |
+
 ## 16.3 Testing and Debugging Log
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
 | `[15th April]` | `[Motion of the hand was sudden and jittery; Hand lost balance]` | `[Mechanical]` | `[Changed the position of the servos and DC motors and tested various combinations]` | `[Worked]` | `[Observing such probelms in the future]` |
-| `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
+
+NEW-
+| `[20th april]` | `[H-bridge and DC motors got fried]` | `[Connections + Motion]` | `[Changed our project idea]` | `[Executed it]` | `[A new, successful project]` |
 
 ## 16.4 Playtesting Notes
 
 | Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
 |---|---|---|---|---|
 | `[Radhika / friend / classmate]` | `[Follwed all the steps]` | `[Nothing]` | `[The movement]` | `[Increase the surprise element]` |
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
+
+NEW-
+| `[friend]` | `[Played the game]` | `[The immediate response that was required]` | `[The whole experience]` | `[Explanation of the instructions]` |
+| `[classmate]` | `[Did everything calmly]` | `[The fast pace of the game]` | `[The game]` | `[Prepare players for the level of speed required.]` |
 
 ---
 
@@ -848,6 +924,9 @@ Include:
 
 **Response:**  
 `[The project was created through a structured sequence of digital modeling and physical assembly. The hand structure was first designed in Blender and 3D printed to achieve precision. Individual components were then cleaned, sanded, and fit. Motors and servos were mounted within the structure using mechanical fasteners and adhesives, with careful attention to alignment and load distribution. Wiring was routed internally to maintain a clean external form while ensuring accessibility for debugging. Iterative revisions were made throughout assembly, particularly in joint tolerances and motor placement, to improve stability and motion quality.]`
+
+NEW-
+`[The hand model was 3D printed and mounted on an MDF board, that was painted black. Wires were connected from each finger to the ESP32 through a breadboard. The system was tested multiple times and adjusted for stable input.]`
 
 ## 17.2 Build Photos
 Add photos throughout the project.
@@ -875,6 +954,12 @@ Example:
 | `v2` | `[14th April]` | `[Integrated all 4 motors and tested their simultaneous movement]` | `[Test interaction complexity]` |
 | `v3` | `[16th April]` | `[Refined gait and balance]` | `[Perfect the motion]` |
 
+NEW-
+| `v1` | `[20th April]` | `[Walking hand with functioning motors]` | `[H-bridge and DC motors got fried]` |
+| `v2` | `[20th April]` | `[Basic structure of new idea]` | `[Could not continue the old idea without those parts]`
+| `v3` | `[21st April]` | `[Reflex action test game]` | `[Successful execution of new concept]` |
+
+
 ---
 
 # 18. Final Outcome
@@ -885,21 +970,36 @@ Describe the final version of your project.
 **Response:**  
 `[The final outcome is a cool, motorized hand prank that responds instantly to user input, translating a simple press into coordinated, lifelike motion. The system successfully integrates mechanical design, electronics, and control into a cohesive interactive artefact. It achieves its intended effect—an object that is at once familiar and unsettling—by prioritizing clarity of motion, responsiveness, and physical presence over complexity.]`
 
+NEW-
+`[Pulse is a working interactive reflex action test + game that combines a digital interface with a physical input system. Players respond to on-screen prompts using a hand-shaped controller, receiving real-time feedback and a final score.]`
+
 ## 18.2 What Works Well
 - `[Immediate and reliable input-to-motion response]`
 - `[Clear, synchronized coordination between motors and servos]`
 - `[Strong user engagement driven by novelty and uncanny motion]`
+
+NEW-
+- `[Clear interaction]`
+- `[Responsive system]`
+- `[Engaging gameplay]`
 
 ## 18.3 What Still Needs Improvement
 - `[The visual, appearance]`
 - `[Element of surprise]`
 - `[More refined balance and weight distribution]`
 
+NEW-
+- `[A more visually poilshed and attractive project]`
+
+
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
 
 **Response:**  
 `[The project evolved from a simpler concept of finger movement to a cooler vision of a walking hand prank, incorporating a fun aesthetic and element of surprise. This shift required greater emphasis on mechanical stability, synchronization, aesthetics and load management. As a result, the design became less about individual motion fidelity and more about achieving a cohesive, believable system of movement.]`
+
+NEW-
+`[The original motor-based concept was replaced due to hardware failure, leading to a simpler and more reliable interaction system that is both a test and a game.]`
 
 ---
 
@@ -913,6 +1013,9 @@ How well did you manage time, tasks, and responsibilities?
 **Response:**  
 `[Our team demonstrated strong alignment in vision, execution and consistent communication throughout the process. Progress was most effective when tasks were discussed, brainstormed and parallelized, particularly during early development stages. Delays primarily arose during integration, where interdependencies between mechanical and electronic systems required iterative troubleshooting. Overall, time and responsibilities were managed effectively, with adaptability playing a key role in maintaining momentum.]`
 
+NEW-
+`[The team collaborated effectively, adapted quickly to challenges and overcame obstacles. Time management improved over the project duration. We demonstrated unity in times of adversity and pulled through with constant communication. Overall, time and responsibilities were managed effectively.]`
+
 ## 19.2 Technical Reflection
 What did you learn about:
 - electronics,
@@ -923,6 +1026,9 @@ What did you learn about:
 
 **Response:**  
 `[This project deepened our understanding of how systems, electronics, code, and mechanics, interact under real-world constraints. We learned that reliable hardware behavior depends as much on power stability and physical alignment as it does on correct code. The integration phase revealed the importance of iterative testing, where small misalignments or inefficiencies compound into larger system-level issues. Most critically, we learned to design with constraints in mind rather than attempting to resolve them later.]`
+
+NEW-
+`[We learned about hardware-software integration, input handling, and debugging.]`
 
 ## 19.3 Design Reflection
 What did you learn about:
@@ -936,11 +1042,18 @@ What did you learn about:
 **Response:**  
 `[We learned that designing for play does not require complexity, but clarity and immediacy. The most effective interactions are those that communicate their function intuitively and respond without delay. The project reinforced the value of restraint- by limiting inputs and removing unnecessary layers, the experience became more focused and impactful. Iteration proved essential in refining, not just functionality, but the emotional response elicited by the object.]`
 
+
+NEW-
+`[We learned the importance of simplicity, clarity, and user interaction in design. We learned hwo to deal with adversity and last minute mishaps, and how to overcome them.]`
+
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
 `[Improvising the user experience, and creating an even cooler prank stages and atmosphere.]`
+
+NEW-
+`[We would have integrated more elements like neopixels or buzzers as part of the experience. We would have added levels to the game, like easy, medium and hard. We would have integrated a variety of songs for the players to choos from. We would have added more complexity and improved the presentation of the entire project.]`
 
 ---
 
