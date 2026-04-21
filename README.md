@@ -52,7 +52,9 @@ By the final review, this README should clearly show:
 
 ## 1.1 Studio / Group Name
 `ODT-2026-The Walikng Hand`
-NEW- `ODT-2026-TEAM PULSE`
+
+NEW- 
+`ODT-2026-TEAM PULSE`
 
 ## 1.2 Team Members
 
@@ -60,17 +62,23 @@ NEW- `ODT-2026-TEAM PULSE`
 |---|---|---|---|
 | `[Sharannya Sakorkar]` | `[Mechanics]` | `[Fabrication + Electronics]` | `[Mechanics]` |
 | `[Aayushi Shirodkar]` | `[Coding]` | `[Fabrication + Electronics]` | `[Coding]` |
-NEW- | `[Sharannya Sakorkar]` | `[Mechanics]` | `[Fabrication + Electronics]` | `[Hands-on building, assembly]` |
+
+NEW- 
+| `[Sharannya Sakorkar]` | `[Mechanics]` | `[Fabrication + Electronics]` | `[Hands-on building, assembly]` |
 | `[Aayushi Shirodkar]` | `[Coding]` | `[Fabrication + Electronics]` | `[Logic building]` |
 
 
 ## 1.3 Project Title
 `[The Walking Hand]`
-NEW- `[PULSE]`
+
+NEW- 
+`[PULSE]`
 
 ## 1.4 One-Line Pitch
 `[Netflix's Wednesday-inspired, switch-operated, creepy walking hand, that pranks users.]`
-NEW- `[A rhythm-based interactive game where players follow on-screen prompts and respond using a physical hand interface.]`
+
+NEW- 
+`[A rhythm-based interactive game where players follow on-screen prompts and respond using a physical hand interface.]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -83,7 +91,8 @@ In 1–2 paragraphs, explain:
 `[The Walking Hand is a Wednesday-series inspired project, built to human scale- a 3D-printed skeletal hand that walks on its own, with no body attached and no explanation offered. At the press of a switch, its fingers come alive: some wiggle, some walk, and the whole thing moves with just enough personality to prank you in the best possible way.
 What powers it is best left mostly to the imagination- but underneath the glove, there is circuitry, there are motors, and there is a microcontroller quietly doing its job. The result is something that sits right at the intersection of engineering and eeriness, equal parts curious artefact and crowd-stopper.]`
 
-NEW- `[Pulse is an interactive musical game built using Pygame and a physical hand-shaped controller. The system plays a song and displays visual prompts indicating which finger the player must press. The player responds by tapping the corresponding finger on a red hand skeleton model connected to an ESP32. The experience is fast-paced and reflex-driven. Players must react quickly and accurately to score points. The system provides real-time feedback such as “Perfect,” “Good,” or “Miss,” based on timing and accuracy. Each round lasts 40 seconds, making it engaging, repeatable, and competitive.]`
+NEW- 
+`[Pulse is an interactive musical game built using Pygame and a physical hand-shaped controller. The system plays a song and displays visual prompts indicating which finger the player must press. The player responds by tapping the corresponding finger on a red hand skeleton model connected to an ESP32. The experience is fast-paced and reflex-driven. Players must react quickly and accurately to score points. The system provides real-time feedback such as “Perfect,” “Good,” or “Miss,” based on timing and accuracy. Each round lasts 40 seconds, making it engaging, repeatable, and competitive.]`
 
 ---
 
@@ -111,7 +120,8 @@ Answer the following:
 **Response:**  
 `[The Walking Hand is a fun, interactive experience, that first pranks the audience, then fascinates them, and lastly, sparks curiosity in them. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
 
-NEW- `[This is a fast-paced, reflex-based musical interaction. The player feels alert, engaged, and slightly challenged. The quick feedback and scoring system make the experience addictive and encourage repeated play.]`
+NEW- 
+`[This is a fast-paced, reflex-based musical interaction. The player feels alert, engaged, and slightly challenged. The quick feedback and scoring system make the experience addictive and encourage repeated play.]`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -121,7 +131,8 @@ Complete the sentence below:
 **Response:**  
 `[We are designing this project as if we are a small creative studio making an interactive experience for people of all age groups to enjoy.]`
 
-NEW- `[We are designing this project as if we are a small creative studio making a playable interactive game for teens, classmates, and exhibition visitors.]`
+NEW- 
+`[We are designing this project as if we are a small creative studio making a playable interactive game for teens, classmates, and exhibition visitors.]`
 
 ---
 
@@ -207,13 +218,19 @@ NEW-
 3. **First Action:** `[Player observes first prompt- any finger, then the next, and so on]`
 4. **Main Interaction:** `[Player taps correct fingers continuously]`
 5. **System Response:** `[Displays “Perfect”, “Good”, or “Miss”, according to the response time]`
-6. **Win / Lose / End Condition:** `[ There is no win or lose condition. The interaction ends when the player releases the button- the motors stop, the fingers return to their resting position, and the hand goes still.]`
-7. **Reset:** `[The hand is ready for the next press without any manual intervention.]`
+6. **Win / Lose / End Condition:** `[ There is no win or lose condition. The player gets their score in the endGame ends after 40 seconds. ]`
+7. **Reset:** `[Game restarts for next player.]`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
 - `[Not Applicable, since this is not a game.]`
+
+NEW-
+- `[Follow the on-screen finger prompts
+Tap the correct finger on the hand model
+Faster and accurate responses score higher
+Game ends after 40 seconds]`
 
 ---
 
@@ -228,11 +245,21 @@ Your project will be considered complete only if these conditions are met.
 - [ ] `[The hand resets to its neutral state immediately upon release of the switch]`
 - [ ] `[At least 3 out of 5 test users express clear engagement (surprise, curiosity, or fascination) during interaction]`
 
+NEW-
+- [ ] `[System runs without crashing]`
+- [ ] `[Inputs are detected correctly]`
+- [ ] `[Feedback is displayed accurately]`
+- [ ] `[Game completes full 40-second cycle]`
+- [ ] `[Player understands how to play]`
+
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
 `[The minimum viable version consists of a structurally stable hand capable of executing a single, clear motion in response to input. This includes one working finger driven by a motor or servo and a functional switch input. While full walking motion and multi-finger coordination may be absent, the core experience, pressing a button and witnessing an inanimate hand come to life, must remain intact. The emphasis at this stage is not complexity, but credibility of responsiveness.]`
+
+NEW-
+`[A working version where different keys on the keyboard are used to play, matched with on-screen prompts, with basic scoring and feedback.]`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
@@ -240,6 +267,11 @@ What features are nice to have but not essential?
 - `[Variable speed control allowing users to modulate the pace of movement.]`
 - `[Improved gait mechanics enabling smoother, more lifelike walking across different surfaces.]`
 - `[The appearance of a real, life-like hand instead of a model.]`
+
+NEW-
+- `[Choice of songs]`
+- `[Difficulty levels- Easy, Medium, Hard]`
+- `[Enhanced visuals]`
 
 ---
 
@@ -261,6 +293,20 @@ Check all that apply.
 - [ ] Installation / tabletop experience
 - [✅] Other: `[Prank/experience/reaction based]`
 
+NEW-
+- [✅] Electronics-based
+- [ ] Mechanical
+- [✅] Sensor-based
+- [ ] App-connected
+- [ ] Motorized
+- [✅] Sound-based
+- [ ] Light-based
+- [✅] Screen/UI-based
+- [ ] Fabricated structure
+- [✅] Game logic based
+- [✅] Installation / tabletop experience
+- [✅] Other: `[Reflex action/ reaction based]`
+
 ## 6.2 High-Level System Description
 Explain how the system works in simple terms.
 
@@ -274,6 +320,9 @@ Include:
 **Response:**  
 `[The system operates as a closed-loop interactive mechanism translating a simple human input into coordinated mechanical motion. The primary input is a physical switch, which, when pressed, sends a signal to the ESP32 microcontroller. The controller processes this input and executes a predefined control logic that simultaneously drives DC motors and servo motors. The DC motors generate forward locomotion by actuating specific fingers, while the servo motors articulate the remaining fingers through controlled angular movement. All components are embedded within a fabricated skeletal hand structure, which houses the wiring, motors, and joints. There is no app-based interaction; the system is intentionally self-contained to preserve immediacy and tactile engagement. The output is purely physical: motion, rhythm, and presence.]`
 
+NEW-
+`[The player taps fingers on a physical hand model. Each finger is connected to the ESP32, which sends input signals to the computer. The Pygame program processes the input and compares it with the expected prompt. Based on accuracy and timing, the system displays feedback and updates the score.]`
+
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
@@ -282,6 +331,13 @@ Include:
 | `[ESP32]` | Processing | `[Interprets input signal and executes programmed logic to coordinate motor and servo activity.]` |
 | `[Servos + DC Motors]` | Output | `[DC motors drive forward locomotion; servo motors control wiggling motion in the fingers.]` |
 | `[3D-Printed Hand Skeleton]` | Physical Action | `[Translates motor output into visible, tactile movement through its structure.]` |
+
+NEW-
+| `[Finger inputs]` | Input | `[Detects players taps]` |
+| `[ESP32]` | Processing | `[Interprets input signal and sends signals to system]` |
+| `[Pygame]` | Processing | `[Matches input with prompts]` |
+| `[Laptop screen]` | Output | `[Displays prompts, feedback and final score]` |
+| `[Hand model]` | Physical action | `[Interactive physical interface for player]` |
 
 ---
 
