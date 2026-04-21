@@ -52,6 +52,7 @@ By the final review, this README should clearly show:
 
 ## 1.1 Studio / Group Name
 `ODT-2026-The Walikng Hand`
+NEW- `ODT-2026-TEAM PULSE`
 
 ## 1.2 Team Members
 
@@ -59,12 +60,17 @@ By the final review, this README should clearly show:
 |---|---|---|---|
 | `[Sharannya Sakorkar]` | `[Mechanics]` | `[Fabrication + Electronics]` | `[Mechanics]` |
 | `[Aayushi Shirodkar]` | `[Coding]` | `[Fabrication + Electronics]` | `[Coding]` |
+NEW- | `[Sharannya Sakorkar]` | `[Mechanics]` | `[Fabrication + Electronics]` | `[Hands-on building, assembly]` |
+| `[Aayushi Shirodkar]` | `[Coding]` | `[Fabrication + Electronics]` | `[Logic building]` |
+
 
 ## 1.3 Project Title
 `[The Walking Hand]`
+NEW- `[PULSE]`
 
 ## 1.4 One-Line Pitch
 `[Netflix's Wednesday-inspired, switch-operated, creepy walking hand, that pranks users.]`
+NEW- `[A rhythm-based interactive game where players follow on-screen prompts and respond using a physical hand interface.]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -76,6 +82,8 @@ In 1–2 paragraphs, explain:
 **Response:**  
 `[The Walking Hand is a Wednesday-series inspired project, built to human scale- a 3D-printed skeletal hand that walks on its own, with no body attached and no explanation offered. At the press of a switch, its fingers come alive: some wiggle, some walk, and the whole thing moves with just enough personality to prank you in the best possible way.
 What powers it is best left mostly to the imagination- but underneath the glove, there is circuitry, there are motors, and there is a microcontroller quietly doing its job. The result is something that sits right at the intersection of engineering and eeriness, equal parts curious artefact and crowd-stopper.]`
+
+NEW- `[Pulse is an interactive musical game built using Pygame and a physical hand-shaped controller. The system plays a song and displays visual prompts indicating which finger the player must press. The player responds by tapping the corresponding finger on a red hand skeleton model connected to an ESP32. The experience is fast-paced and reflex-driven. Players must react quickly and accurately to score points. The system provides real-time feedback such as “Perfect,” “Good,” or “Miss,” based on timing and accuracy. Each round lasts 40 seconds, making it engaging, repeatable, and competitive.]`
 
 ---
 
@@ -103,6 +111,8 @@ Answer the following:
 **Response:**  
 `[The Walking Hand is a fun, interactive experience, that first pranks the audience, then fascinates them, and lastly, sparks curiosity in them. It puts a single switch in front of you and dares you to press it. When you do, a gloved, skeletal hand springs to life- fingers wiggling, walking, and moving with a mechanical confidence that feels both exciting and confusing. The experience is meant to be immediate, tactile, and impossible to look away from. The experience is designed to be familiar enough to unsettle, strange enough to fascinate. We want people to return- return with questions- How does it work? Can it go faster? What happens if I press it again? That loop of wonder and curiosity is the real mechanism at play.]`
 
+NEW- `[This is a fast-paced, reflex-based musical interaction. The player feels alert, engaged, and slightly challenged. The quick feedback and scoring system make the experience addictive and encourage repeated play.]`
+
 ## 2.3 Design Persona
 Complete the sentence below:
 
@@ -110,6 +120,8 @@ Complete the sentence below:
 
 **Response:**  
 `[We are designing this project as if we are a small creative studio making an interactive experience for people of all age groups to enjoy.]`
+
+NEW- `[We are designing this project as if we are a small creative studio making a playable interactive game for teens, classmates, and exhibition visitors.]`
 
 ---
 
@@ -124,11 +136,20 @@ List what inspired the project.
 | `[Biomechanics]` | `[Human Hand Anatomy & Tendon-Drive Mechanisms]` | `[We understood how fingers flex, curl, and bear weight through pivot joints, which helped shape our 3D-printed skeletal structure and motor placement]` |
 | `[Prosthetic Limb Research` | `[Luke Arm]` | `[Study on anatomical framework for how motors map to realistic finger movement]` |
 
+NEW-
+| `[Game]` | `[Reflex action games (general)]` | `[Following instruction and reacting in time]` |
+| `[App]` | `[Piano Tiles]` | `[Fast tapping interaction]` |
+| `[Object]` | `[Keyboard]` | `[Finger-based input system]` |
+
+
 ## 3.2 Original Twist
 What makes your project original?
 
 **Response:**  
 `[It is a fun, harmless prank menat to spread laughter and excitement.]`
+
+NEW-
+`[The use of a physical hand-shaped controller instead of a keyboard creates a more fun, engaging and tactile experience.]`
 
 ---
 
@@ -147,6 +168,9 @@ Examples:
 `[press → activate → walk & wiggle → release → reset
 The participant presses the switch, which pulls GPIO 14 LOW and triggers the main loop. Instantly and simultaneously, the DC motors drive the index and little fingers forward in a walking motion, while the servo motors step through a sequence of angles — 30°, 90°, 150°, 90° — cycling every 0.3 seconds to produce a continuous, rhythmic wiggle in the middle and ring fingers. The hand walks for as long as the switch is held. The moment it is released, all four motors stop, both servos return to their neutral 90° position, and the wiggle counter resets to zero, leaving the hand exactly as it was found, ready for the next press.]`
 
+NEW-
+`[read instructions → be alert → see prompt → identify finger → tap finger → system checks → feedback → repeat → score]`
+
 ## 4.2 Intended Player / Audience
 
 | Question | Response |
@@ -158,6 +182,14 @@ The participant presses the switch, which pulls GPIO 14 LOW and triggers the mai
 | What should the player feel? | `[surprise, excitement, curiosity]` |
 | Is explanation required before use? | `[This is a switch-operated hand. There is one control and one instruction: press the button, and the hand walks. Release it, and it stops. No setup is required, no prior knowledge is needed, and nothing about it is complicated. Press it, watch it, and try not to look away.]` |
 
+NEW-
+| Who is this for? | `[People of all age groups]` |
+| Age range | `[Approximately 12+]` |
+| Solo or multiplayer | `[Solo]` |
+| Expected duration of one round | `[40 seconds]` |
+| What should the player feel? | `[engaged, challenged, excited]` |
+| Is explanation required before use? | `[Minimal instructions]` |
+
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
@@ -166,6 +198,15 @@ Describe exactly how a player will use the project.
 3. **First Action:** `[Suddenly, the hand comes out of nowhere and pranks the user.]`
 4. **Main Interaction:** `[They hold the button down and watch the hand respond, keeping it pressed for as long as they want to see it move.]`
 5. **System Response:** `[The moment the button is pressed, all four motors activate simultaneously. The index and little fingers begin walking the hand forward across the surface, while the middle and ring fingers wiggle in a rhythmic, repeating sequence.]`
+6. **Win / Lose / End Condition:** `[ There is no win or lose condition. The interaction ends when the player releases the button- the motors stop, the fingers return to their resting position, and the hand goes still.]`
+7. **Reset:** `[The hand is ready for the next press without any manual intervention.]`
+
+NEW-
+1. **Approach:** `[The player sees the setup with the hand and screen]`
+2. **Start:** `[Game begins with starting instrcutions and music]`
+3. **First Action:** `[Player observes first prompt- any finger, then the next, and so on]`
+4. **Main Interaction:** `[Player taps correct fingers continuously]`
+5. **System Response:** `[Displays “Perfect”, “Good”, or “Miss”, according to the response time]`
 6. **Win / Lose / End Condition:** `[ There is no win or lose condition. The interaction ends when the player releases the button- the motors stop, the fingers return to their resting position, and the hand goes still.]`
 7. **Reset:** `[The hand is ready for the next press without any manual intervention.]`
 
