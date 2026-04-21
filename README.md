@@ -78,7 +78,7 @@ NEW-
 `[Netflix's Wednesday-inspired, switch-operated, creepy walking hand, that pranks users.]`
 
 NEW- 
-`[A rhythm-based interactive test + game where players follow on-screen prompts and respond using a physical hand interface.]`
+`[A rhythm-based reflex action test + game where players follow on-screen prompts and respond using a physical hand interface.]`
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
